@@ -1,0 +1,22 @@
+{
+    "name": "Hilos",
+    "short_name": "Hilos",
+    "description": "Catálogo de bolsos tejidos a mano con amor y tradición.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fef3c7",
+    "theme_color": "#fef3c7",
+    "icons": [
+      {
+        "src": "/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
