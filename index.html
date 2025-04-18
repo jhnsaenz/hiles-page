@@ -2,11 +2,33 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hilos - Bolsos tejidos a mano</title>
+
+    <!-- Título y descripción -->
+    <title>Hilos</title>
+    <meta name="description" content="Catálogo de bolsos tejidos a mano con amor y tradición. Descubre Hilos, una marca única y artesanal." />
+    <meta name="author" content="Hilos" />
+    <meta name="keywords" content="Hilos, bolsos tejidos, artesanía, catálogo, hecho a mano" />
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#fef3c7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Íconos -->
+    <link rel="icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Fuente decorativa -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-white text-gray-800">
+
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
