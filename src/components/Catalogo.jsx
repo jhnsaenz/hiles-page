@@ -6,8 +6,36 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 
-// Generamos 50 productos automáticamente
-const productos = Array.from({ length: 50 }, (_, i) => ({
+// Primero definimos los productos manuales
+const productosExtra = [
+  {
+    id: 1001,
+    nombre: "Bolso Cielo",
+    categoria: "Mediano",
+    imagen: "/images/bolso cielo.jpg",
+    precio: 45,
+    popularidad: 4,
+  },
+  {
+    id: 1002,
+    nombre: "Bolso Beta",
+    categoria: "Grande",
+    imagen: "/images/bolso beta.jpg",
+    precio: 60,
+    popularidad: 5,
+  },
+  {
+    id: 1003,
+    nombre: "Bolso Mars",
+    categoria: "Pequeño",
+    imagen: "/images/bolso mars.jpg",
+    precio: 35,
+    popularidad: 3,
+  },
+];
+
+// Luego generamos los productos aleatorios
+const productosGenerados = Array.from({ length: 50 }, (_, i) => ({
   id: i + 1,
   nombre: `Bolso ${["Sol", "Tierra", "Raíz", "Luna", "Cielo", "Arena", "Nube", "Brisa", "Flor", "Mar"][i % 10]}`,
   categoria: ["Pequeño", "Mediano", "Grande"][i % 3],
@@ -15,6 +43,9 @@ const productos = Array.from({ length: 50 }, (_, i) => ({
   precio: Math.floor(Math.random() * 81) + 20,
   popularidad: Math.floor(Math.random() * 5) + 1,
 }));
+
+// Unimos los productos extra con los generados
+const productos = [...productosExtra, ...productosGenerados];
 
 const Catalogo = () => {
   const [busqueda, setBusqueda] = useState("");
@@ -95,13 +126,13 @@ const Catalogo = () => {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }}
-          pagination={false} // Desactivamos los bullets
+          pagination={false}
           modules={[Navigation, Pagination]}
           onSwiper={setSwiperInstance}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }, // Aquí fijamos 3 productos para escritorio
+            1024: { slidesPerView: 3 },
           }}
           className="mySwiper !pb-10"
         >
@@ -137,7 +168,5 @@ const Catalogo = () => {
 };
 
 export default Catalogo;
-
-
 
 
