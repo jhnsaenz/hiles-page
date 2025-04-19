@@ -24,7 +24,7 @@ const Redes = () => {
         aria-label="Enlaces a redes sociales"
       >
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/hilos.nata?igsh=MW9nZzRidHZldW9zeA=="
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
