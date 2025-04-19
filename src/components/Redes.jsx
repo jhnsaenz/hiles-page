@@ -33,7 +33,7 @@ const Redes = () => {
           📸
         </a>
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/share/1BSV4hy3Wp/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -42,7 +42,7 @@ const Redes = () => {
           📘
         </a>
         <a
-          href="https://wa.me/3175846819"
+          href="https://wa.me/+573175846819"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
